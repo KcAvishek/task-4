@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    padding: 20px 0;
+    color: #ffffff;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e9ecef;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    margin: 0 0 10px;
+}
+
+.hero p {
+    margin: 0;
+}
+
+/* Products Section */
+.products {
+    padding: 60px 0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.product-categories {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-categories .category {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item p {
+    color: #888888;
+}
+
+.product-item .price {
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: calc(100% - 40px);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}

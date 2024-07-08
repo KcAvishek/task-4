@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>E-commerce Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to the Best Online Store</h2>
+            <p>Find the best products at the most affordable prices.</p>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search products...">
+            </div>
+            <div class="product-categories">
+                <button class="category" onclick="filterProducts('all')">All</button>
+                <button class="category" onclick="filterProducts('electronics')">Electronics</button>
+                <button class="category" onclick="filterProducts('clothing')">Clothing</button>
+                <button class="category" onclick="filterProducts('accessories')">Accessories</button>
+            </div>
+            <div class="product-list" id="product-list">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 My E-commerce Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
